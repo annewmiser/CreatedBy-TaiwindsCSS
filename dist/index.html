@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <title>Tailwind Css</title>
+</head>
+<body >
+  <!-- Start menubar smail screen -->
+    <nav class="bg-white fixed  z-10 inset-shadow w-full overflow-hidden h-auto flex justify-between">
+      <a href="#home" class="p-[16px] inline-block tracking-[4px] hover:bg-neutral-300">LOGO</a>
+      
+
+      <div class="hidden whitespace-nowrap md:block " >
+        <a href="#about" class="p-[16px] inline-block tracking-[4px] hover:bg-neutral-300">ABOUT</a>
+        <a href="#team" class="p-[16px] inline-block tracking-[4px] hover:bg-neutral-300 ">
+          <i class="fa-solid fa-user"></i>TEAM</a>
+        <a href="#work" class="p-[16px] inline-block tracking-[4px] hover:bg-neutral-300">
+          <i class="fa-solid fa-list"></i>WORK</a>
+        <a href="#pricing" class="p-[16px] inline-block tracking-[4px] hover:bg-neutral-300 ">
+          <i class="fa-solid fa-dollar-sign"></i>PRICING</a>
+        <a href="#contact" class="p-[16px] inline-block tracking-[4px] hover:bg-neutral-300">
+          <i class="fa-solid fa-envelope"></i>CONTACT</a>
+      </div>
+      <!-- button taggle menubar smail screen  -->
+      <a href="javascript:void(0)" class="p-[16px] cursor-pointer hover:bg-neutral-300 md:hidden" onclick="opensidebar()">
+      <svg   xmlns="http://www.w3.org/2000/  " fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+      </a>
+    </nav>
+
+    <!-- sidebar menu small screen only -->
+    <div id="sidebar" class="bg-black text-white fixed z-10 h-full size-[200px] hidden animate-sidebar sm:hidden">
+      <a href="javascript:void(0)" class="p-4 block text-lg hover:bg-neutral-300 hover:text-black" onclick="closesidebar()">Close ×</a>      
+      <a href="#about" class="px-[16px] py-[8px] text-base block w-full hover:bg-neutral-300 hover:text-black">ABOUT</a>
+      <a href="#team" class="px-[16px] py-[8px] text-base block w-full hover:bg-neutral-300 hover:text-black">TEAM</a>
+      <a href="#work" class="px-[16px] py-[8px] text-base block w-full hover:bg-neutral-300 hover:text-black">WORK</a>
+      <a href="#pricing" class="px-[16px] py-[8px] text-base block w-full hover:bg-neutral-300 hover:text-black">PRICING</a>
+      <a href="#contact" class="px-[16px] py-[8px] text-base block w-full hover:bg-neutral-300 hover:text-black">CONTACT</a>
+
+    </div>
+<!-- Start header  -->
+    <header class="bg-[url('/dist/img/mac.jpg')] bg-cover bg-center min-h-screen grayscale-50 relative " id="home">
+      <div class="absolute top-1/2 left-0 z-1 text-white  -translate-x-0  -translate-y-1/2 p-[48px]">
+        <span class="text-[64px] hidden sm:block">Start something that matters</span>
+        <br>
+        <span class="text-4xl sm:hidden ">Start something that matters</span>
+        <br>
+        <span class="text-lg">Stop wasting valuable time with projects that just isn't you.</span>
+        <p class="my-[15px]"><a href="#" class="inline-block py-[12px] px-[24px] mt-[16px] opacity-60 bg-white text-black text-lg hover:opacity-80">Learn more and start today</a></p>
+      </div>
+
+      <div class="absolute px-[48px] py-[24px] bottom-0 left-0 text-neutral-500 ">
+        <a href="#"><i class="fa-brands fa-square-facebook hover:text-neutral-600 cursor-default"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram hover:text-neutral-600 cursor-auto"></i></a>
+        <a href="#"><i class="fa-solid fa-bell hover:text-neutral-600 cursor-auto"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest-p hover:text-neutral-600 cursor-auto"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter hover:text-neutral-600 cursor-auto"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in hover:text-neutral-600 cursor-auto"></i></a>
+
+      </div>
+    </header>
+   <!-- End header  -->
+
+   <!-- Start About  -->
+    <div class="w-full py-[8rem] px-[1rem] text-black" id="about">
+
+      <h3 class="uppercase text-center text-2xl my-[10px]">About the company</h3>
+      <p class="text-center text-lg my-[18px]">Key features of our company</p>
+
+      <div class="block sm:flex w-full px-[0.5rem] mt-[4rem] text-center">
+
+        <div class="px-[0.5rem]">
+          <i class="fa-solid fa-desktop text-[4rem]"></i>
+          <p class="text-lg my-[18px]">Responsive</p>
+          <p class="text-[15px] my-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+
+        <div class="px-[0.5rem]">
+          <i class="fa-solid fa-heart text-[4rem]"></i>
+          <p class="text-lg my-[18px]">Passion</p>
+          <p class="text-[15px] my-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+
+        <div class="px-[0.5rem]">
+          <i class="fa-solid fa-diamond text-[4rem]"></i>
+          <p class="text-lg my-[18px]">Design</p>
+          <p class="text-[15px] my-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+
+        <div class="px-[0.5rem]">
+          <i class="fa-solid fa-gear text-[4rem]"></i>
+          <p class="text-lg my-[18px]">Support</p>
+          <p class="text-[15px] my-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+
+      </div>
+    </div>
+       <!-- End About  -->
+
+
+<!-- Start Design -->
+    <div class="w-full py-[8rem] px-[1rem] text-black bg-zinc-100"  id="design">
+      <div class="block sm:flex px-[0.5rem]">
+        <div class="px-[0.5rem]">
+        <h3 class="text-2xl my-[10px]">We know design.</h3>
+        <p class="my-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+          tempor incididunt ut labore et dolore.</p>
+      
+          <p class="my-[15px] ">
+            <a href="#" class="py-[0.5rem] px-[1rem] bg-black text-white text-[15px] hover:bg-stone-300 hover:text-black inline-block"><i class="fa-solid fa-list"></i> View Our Works</a>
+          </p>
+      </div>
+      <div class="px-[0.5rem] mx-auto">
+        <img src="https://www.w3schools.com/w3images/phone_buildings.jpg" alt="phone" class="max-w-full h-auto rounded-sm block ">
+      </div>
+    </div>
+    </div>
+<!-- End Design -->
+  <!-- Strat Team -->
+    <div class="w-full py-[8rem] px-[1rem] text-black bg-white" id="team">
+      <h3 class="text-2xl my-[10px] uppercase text-center">the team</h3>
+      <p class="my-[15px] text-lg text-center">Thr ones who runs this company</p>
+
+      <div class="mt-[4rem] px-[0.5rem] grid sm:grid-cols-2 lg:grid-cols-4">
+
+        <div class="px-[0.5rem] mb-[1rem] ">
+          <img src="https://www.w3schools.com/w3images/team2.jpg" alt="men" class="grayscale-70 w-full h-auto block">
+          <div class="py-[0.01em] px-[1rem] inset-shadow">
+          <h3 class="text-2xl my-[10px] uppercase">John Doe</h3>
+          <p class="text-[15px] my-[15px] opacity-50">CEO & Founder</p>
+          <p class="text-[15px] my-[15px] ">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <button class="bg-zinc-100 py-[0.5rem] px-[1rem] hover:bg-stone-300  w-full text-center my-[15px] cursor-pointer"><i class="fa-solid fa-envelope"></i>Contact</button>
+
+        </div>
+        </div>
+
+        <div class="px-[0.5rem] mb-[1rem]">
+          <img src="https://www.w3schools.com/w3images/team1.jpg" alt="men" class="grayscale-70 w-full h-auto block">
+          <div class="py-[0.01em] px-[1rem] inset-shadow">
+          <h3 class="text-2xl my-[10px] uppercase">John Doe</h3>
+          <p class="text-[15px] my-[15px] opacity-50">Art Director</p>
+          <p class="text-[15px] my-[15px] ">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <button class="bg-zinc-100 py-[0.5rem] px-[1rem] hover:bg-stone-300  w-full text-center my-[15px] cursor-pointer"><i class="fa-solid fa-envelope"></i>Contact</button>
+        </div>
+        </div>
+
+        <div class="px-[0.5rem] mb-[1rem] ">
+          <img src="https://www.w3schools.com/w3images/team3.jpg" alt="men" class="grayscale-70 w-full h-auto block">
+          <div class="py-[0.01em] px-[1rem] inset-shadow">
+          <h3 class="text-2xl my-[10px] uppercase">John Doe</h3>
+          <p class="text-[15px] my-[15px] opacity-50">Web Designer</p>
+          <p class="text-[15px] my-[15px] ">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <button class="bg-zinc-100 py-[0.5rem] px-[1rem] hover:bg-stone-300  w-full text-center my-[15px] cursor-pointer"><i class="fa-solid fa-envelope"></i>Contact</button>
+        </div>
+        </div>
+
+        <div class="px-[0.5rem] mb-[1rem] ">
+          <img src="https://www.w3schools.com/w3images/team4.jpg" alt="men" class="grayscale-70 w-full h-auto block">
+          <div class="py-[0.01em] px-[1rem] inset-shadow">
+          <h3 class="text-2xl my-[10px] uppercase">John Doe</h3>
+          <p class="text-[15px] my-[15px] opacity-50">Designer</p>
+          <p class="text-[15px] my-[15px] ">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <button class="bg-zinc-100 py-[0.5rem] px-[1rem] hover:bg-stone-300  w-full text-center my-[15px] cursor-pointer"><i class="fa-solid fa-envelope"></i>Contact</button>
+        </div>
+        </div>
+      </div>
+    </div>
+      <!-- End Team -->
+       <!-- Start work -->
+      <div class="w-full py-[8rem] px-[1rem] text-white bg-zinc-500 text-center grid sm:grid-cols-4 gap-4" id="work">
+        <div><span class="text-4xl">14+</span><br>Partners</div>
+        <div><span class="text-4xl">55+</span><br>Projects Done</div>
+        <div><span class="text-4xl">89+</span><br>Happy Clients</div>
+        <div><span class="text-4xl">150+</span><br>Meetings</div>
+      </div>
+
+      <div class="w-full py-[8rem] px-[1rem] text-black bg-white text-center">
+        <h3 class="text-2xl my-[10px] uppercase text-center">OUR WORK</h3>
+        <p class="my-[15px] text-lg text-center">What we've done for people</p>
+  
+
+        <div class="mt-[4rem] px-[0.5rem] grid sm:grid-cols-2 md:grid-cols-4">
+
+        <div class="px-[0.5rem]"><img src="https://www.w3schools.com/w3images/tech_mic.jpg" alt="A microphone" class="w-full block hover:opacity-50" onclick="toggleImg(this)"></div>
+        <div class="px-[0.5rem]"><img src="https://www.w3schools.com/w3images/tech_phone.jpg" alt="A phone"class="w-full block hover:opacity-50" onclick="toggleImg(this)"></div>
+        <div class="px-[0.5rem]"><img src="https://www.w3schools.com/w3images/tech_drone.jpg" alt="A drone"class="w-full block hover:opacity-50" onclick="toggleImg(this)"></div>
+        <div class="px-[0.5rem]"><img src="https://www.w3schools.com/w3images/tech_sound.jpg" alt="Soundbox"class="w-full block hover:opacity-50" onclick="toggleImg(this)"></div>
+      </div>
+
+      <div class="my-[1rem] px-[0.5rem] grid sm:grid-cols-2 md:grid-cols-4" id="work">
+
+        <div class="px-[0.5rem]"><img src="https://www.w3schools.com/w3images/tech_tablet.jpg" alt="A tablet" class="w-full block hover:opacity-50" onclick="toggleImg(this)"></div>
+        <div class="px-[0.5rem]"><img src="https://www.w3schools.com/w3images/tech_camera.jpg" alt="A camera"class="w-full block hover:opacity-50" onclick="toggleImg(this)"></div>
+        <div class="px-[0.5rem]"><img src="https://www.w3schools.com/w3images/tech_typewriter.jpg" alt="A typewriter"class="w-full block hover:opacity-50" onclick="toggleImg(this)"></div>
+        <div class="px-[0.5rem]"><img src="https://www.w3schools.com/w3images/tech_tableturner.jpg" alt="A tableturner"class="w-full block hover:opacity-50" onclick="toggleImg(this)"></div>
+      </div>
+      </div>
+      
+      <!-- toggle show img  -->
+       <div class="bg-black w-full h-full hidden fixed letf-0 top-0 z-20 pt-[100px]" id="model01" onclick="this.style.display='none'">
+        <span class="inline-block absolute top-0 right-0 py-[12px] px-[24px] text-white text-4xl cursor-pointer hover:bg-stone-300 hover:text-black"><i class="fa-solid fa-xmark"></i></span>
+        <div class="container mx-auto py-[4rem] text-center animate-zoom">
+          <img src="" id="img01" class=" inline-block items-center ">
+          <p id="caption" class="text-lg opacity-50 my-[18px] text-white"></p>
+        </div>
+
+       </div>
+
+       <div class="bg-zinc-100 py-[4rem] px-[1rem] text-black ">
+
+        <div class="block sm:flex justify-between w-full h-auto">
+
+          <div class="text-start px-[0.5rem]">
+            <h3 class="my-[10px] text-2xl">Our Skills.</h3>
+            <p class="my-[15px] text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              <br>tempor incididunt ut labore et dolore.</p>
+              <p class="my-[15px] text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                <br>tempor incididunt ut labore et dolore.</p>
+          </div>
+
+          <div class="text-base px-[0.5rem]  w-1/2">
+            <p class="tracking-[0.25em] text-nowrap my-[15px]"><i class="fa-solid fa-camera mr-[1rem]"></i>Photography</p>
+            <div class="w-full bg-neutral-400"><div class="text-center text-white py-[0.01em] px-[1rem] w-[90%] bg-zinc-600">90%</div></div>
+            <p class="tracking-[0.25em] text-nowrap my-[15px]"><i class="fa-solid fa-desktop mr-[1rem]"></i>Web Desing</p>
+            <div class="w-full bg-neutral-400"><div class="text-center text-white py-[0.01em] px-[1rem] w-[85%] bg-zinc-600">85%</div></div>
+            <p class="tracking-[0.25em] text-nowrap my-[15px]"><i class="fa-solid fa-image mr-[1rem]"></i>Photoshop</p>
+            <div class="w-full bg-neutral-400"><div class="text-center text-white py-[0.01em] px-[1rem] w-[75%] bg-zinc-600">75%</div></div>
+            
+          </div>
+        </div>
+       </div>
+            <!-- End work -->
+
+          <!-- Strat pricing -->
+           <div class="py-[8rem] px-[1rem] bg-zinc-600 text-white" id="pricing">
+            <h3 class="my-[10px] text-center text-2xl uppercase">pricing</h3>
+            <p class="my-[15px] text-center text-lg">Choose a pricing plan that fits your needs.</p>
+            <div class="mt-[4rem] px-[0.5rem] grid grid-col-1 sm:grid-cols-3">
+              <div class="my-[1rem] px-[0.5rem] text-center ">
+                <ul class="hover:shadow-2xl ">
+                  <li class="bg-black text-white text-2xl px-[1rem] py-[2rem]">Basic</li>
+                  <li class="bg-white text-black p-[1rem] border-b border-b-zinc-300"><b>10GB</b> Storagre</li>
+                  <li class="bg-white text-black p-[1rem] border-b border-b-zinc-300"><b>10</b> Emails</li>
+                  <li class="bg-white text-black p-[1rem] border-b border-b-zinc-300"><b>10</b> Domains</li>
+                  <li class="bg-white text-black p-[1rem] border-b border-b-zinc-300"><b>Emdless</b> Support</li>
+                  <li class="bg-white text-black p-[1rem] border-b border-b-zinc-300"><h2 class="text-2xl my-[10px]">$ 10</h2><span class="text-base opacity-50">per month</span></li>
+                  <li class="bg-zinc-100 py-[1.5rem] px-[1rem]"><button class="text-white bg-black inline-block py-[0.75rem] px-[1.5rem] cursor-pointer hover:bg-zinc-300 hover:text-black">Sign Up</button></li>
+                </ul>
+              </div>
+
+              <div class=" px-[0.5rem] text-center ">
+                <ul class="hover:shadow-2xl ">
+                  <li class="bg-red-500 text-white text-2xl px-[1rem] py-[3rem]">Pro</li>
+                  <li class="bg-white text-black p-[1rem] border-b border-b-zinc-300"><b>25GB</b> Storagre</li>
+                  <li class="bg-white text-black p-[1rem] border-b border-b-zinc-300"><b>25</b> Emails</li>
+                  <li class="bg-white text-black p-[1rem] border-b border-b-zinc-300"><b>25</b> Domains</li>
+                  <li class="bg-white text-black p-[1rem] border-b border-b-zinc-300"><b>Emdless</b> Support</li>
+                  <li class="bg-white text-black p-[1rem] border-b border-b-zinc-300"><h2 class="text-2xl my-[10px]">$ 25</h2><span class="text-base opacity-50">per month</span></li>
+                  <li class="bg-zinc-100 py-[1.5rem] px-[1rem]"><button class="text-white bg-black inline-block py-[0.75rem] px-[1.5rem] cursor-pointer hover:bg-zinc-300 hover:text-black">Sign Up</button></li>
+                </ul>
+              </div>
+
+              <div class="my-[1rem] px-[0.5rem] text-center ">
+                <ul class="hover:shadow-2xl ">
+                  <li class="bg-black text-white text-2xl px-[1rem] py-[2rem]">Premium</li>
+                  <li class="bg-white text-black p-[1rem] border-b border-b-zinc-300"><b>50GB</b> Storagre</li>
+                  <li class="bg-white text-black p-[1rem] border-b border-b-zinc-300"><b>50</b> Emails</li>
+                  <li class="bg-white text-black p-[1rem] border-b border-b-zinc-300"><b>50</b> Domains</li>
+                  <li class="bg-white text-black p-[1rem] border-b border-b-zinc-300"><b>Emdless</b> Support</li>
+                  <li class="bg-white text-black p-[1rem] border-b border-b-zinc-300"><h2 class="text-2xl my-[10px]">$ 50</h2><span class="text-base opacity-50">per month</span></li>
+                  <li class="bg-zinc-100 py-[1.5rem] px-[1rem]"><button class="text-white bg-black inline-block py-[0.75rem] px-[1.5rem] cursor-pointer hover:bg-zinc-300 hover:text-black">Sign Up</button></li>
+                </ul>
+              </div>
+            </div>
+           </div>
+          <!-- End pricing -->
+
+          <!-- Start contact -->
+           <div class="py-[8rem] px-[1rem] bg-zinc-100 text-black" id="contact">
+            <h3 class="text-center text-2xl my-[10px] uppercase">contact</h3>
+            <p class="text-center text-lg my-[15px]">Lets get in touch, Send a message:</p>
+            <p class="my-[15px]"><i class="fa-solid fa-location-dot mr-[1rem] text-4xl"></i>  Chicago, US</p>
+            <p class="my-[15px]"><i class="fa-solid fa-phone mr-[1rem] text-4xl"></i>Phone:+00151515</p>
+            <p class="my-[15px]"><i class="fa-solid fa-envelope mr-[1rem] text-4xl"></i>Email:mail@mail.com</p>
+            <br>
+            <form action="#" method="post">
+             <p class="my-[15px]"><input type="text" name="Name" placeholder="Name" class="p-[0.5rem] border-1 border-zinc-300 w-full bg-white" required></p>
+             <p class="my-[15px]"><input type="text" name="Email" placeholder="Email" class="p-[0.5rem] border-1 border-zinc-300 w-full bg-white" required></p>
+             <p class="my-[15px]"><input type="text" name="Subject" placeholder="Subject" class="p-[0.5rem] border-1 border-zinc-300 w-full bg-white" required></p>
+             <p class="my-[15px]"><input type="text" name="Message" placeholder="Message" class="p-[0.5rem] border-1 border-zinc-300 w-full bg-white" required></p>
+              <p class="my-[15px]"><button class="text-white bg-black cursor-pointer text-base uppercase py-[0.5rem] px-[1rem] hover:bg-zinc-300 hover:text-black"><i class="fa-solid fa-paper-plane"></i>send message</button></p>
+            </form>
+            <div class="mt-[4rem]">
+              <img src="https://www.w3schools.com/w3images/map.jpg" alt="" class="block w-full grayscale-70">
+            </div>
+           </div>
+           <!-- End contact -->
+            <!-- Strat footer  -->
+           <footer class="py-[4rem] bg-black text-center text-white ">
+            <a href="#home" class="bg-zinc-100 text-black py-[0.5rem] px-[1rem] hover:bg-zinc-300"><i class="fa-solid fa-arrow-up mr-[1rem] "></i>To the top</a>
+            <p class="my-[15px] text-white text-2xl"><i class="fa-brands fa-square-facebook hover:opacity-50"></i> <i class="fa-brands fa-square-instagram hover:opacity-50"></i> <i class="fa-brands fa-square-snapchat hover:opacity-50"></i> <i class="fa-brands fa-pinterest-p hover:opacity-50"></i> <i class="fa-brands fa-twitter hover:opacity-50"></i> <i class="fa-brands fa-linkedin hover:opacity-50"></i></p>
+            <p class="my-[15px]">Powered by <a href="#" class="underline cursor-pointer hover:text-green-500">w3.css</a></p>
+           </footer>
+            <!-- End footer  -->
+
+          
+<script>
+  // function Model Image Gallery
+  function toggleImg(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("model01").style.display="block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+
+  // fuction taggle sidebar
+  var mySidebar = document.getElementById('sidebar') ;
+
+  function opensidebar(){
+    if(mySidebar.style.display === 'block'){
+      mySidebar.style.display = 'none';
+    }else {
+      mySidebar.style.display = 'block'; 
+    }
+  }
+
+  function closesidebar() {
+    mySidebar.style.display = "none";
+  }
+
+  // function hiden when screen more then 640 
+  window.addEventListener('resize', function(){
+    if (window.innerWidth >= 640) {
+      closesidebar();
+    }
+  });
+
+  if (window.innerWidth >= 640) {
+    closesidebar();
+  }
+
+</script>
+
+</body>
+</html>
